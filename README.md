@@ -28,7 +28,7 @@ this is a sample of dataset after setting Datatime column as index :
 
 5- Perform EDA on each Feature to show how impactful is it for gaining insights and uncover hidden patterns .
 
-i will show to u some of EDA :
+i will show to u some of MY EDA :
 
 ![image](https://github.com/user-attachments/assets/df54ed1e-3375-4454-b639-493da1700cfa)
 
@@ -53,4 +53,18 @@ i will show to u some of EDA :
 
 
 ![newplot](https://github.com/user-attachments/assets/093afe0f-002b-43c2-8db5-209b936967b1)
+
+
+
+## Models :
+
+1- used Prophet Developed by Facebook cause it can easily detect seasonality , handling trends and dont need data in a stationary format so it can easliy doing forcastion . it accept data in format ds which refer to Datetime and y refer to PJM_MW (Electricity Demand) , split data into train and test manually by setting each data comes after '2024-07-01' is considered as testing data else i consider it in training data , it was achieved of MAPE of 9 % ,i try to add holidays to be considered in Model but it achevie nothing i mean its not enhance model performance it achieved 9.1% of MAPE
+
+![image](https://github.com/user-attachments/assets/13ee44ce-0275-4ecd-8602-a016d9ecf259)
+
+![image](https://github.com/user-attachments/assets/86388242-49e0-414d-b560-bc7d513ae0c0)
+
+2- used XGBoost but its not consider datatime column in either training and testing Data, it depends on calender features such as hour,day,season,year and output PJM_MW (Electricity Demand) only but i also split data based on Datatime index due to preserve temporal order so setting each data comes after '2024-07-01' is considered as testing data else i consider it in training data , it was achieved of MAPE of 7 % as u can see it has been outperforming Prophet . so i have choose it for deployment 
+
+
 
