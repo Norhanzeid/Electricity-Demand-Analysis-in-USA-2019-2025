@@ -1,0 +1,18 @@
+# Ignore virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# System files
+.DS_Store
+*.db
+*.sqlite3
+.ipynb_checkpoints
+*.log
+.env
+.git/
+.gitignore
+*.ipynb
+Data/
