@@ -1,9 +1,14 @@
 # Electricity-Demand-Analysis-in-USA from 2019-2025
 
-The data was sourced via a public API from the EIA website, covering U.S. power consumption between 2019 and 2025 From PJM Region ,Data contains 56,663 rows and Two columns Datatime and PJM_MW (Electricity Demand) as output 
+The data was sourced via a public API from the EIA website, covering U.S. power consumption between 2019 and 2025 From PJM Region ,Data contains 56,666 rows and Two columns Datatime and PJM_MW (Electricity Demand) as output 
 
-through this website u can get Dataset 
+through this website u can get Dataset .
+
 ![Screenshot (1610)](https://github.com/user-attachments/assets/e4a9ca26-df1c-4ac3-94ad-56fe465e28cf)
+
+this is a sample of dataset after setting Datatime column as index :
+
+![Screenshot (1611)](https://github.com/user-attachments/assets/da487bda-8c24-4f6e-b021-fc019d5cecba)
 
 
 # Actual Electricity Demand in USA Over Time(2019-2025)
@@ -23,13 +28,16 @@ through this website u can get Dataset
 
 5- Perform EDA on each Feature to show how impactful is it for gaining insights and uncover hidden patterns .
 
+i will show to u some of EDA :
 
 ![image](https://github.com/user-attachments/assets/df54ed1e-3375-4454-b639-493da1700cfa)
 
-![image](https://github.com/user-attachments/assets/9e36c09d-ee3a-40af-96e6-2a85b9778bb8)
-
 
 ![newplot](https://github.com/user-attachments/assets/093afe0f-002b-43c2-8db5-209b936967b1)
+
+
+![image](https://github.com/user-attachments/assets/9e36c09d-ee3a-40af-96e6-2a85b9778bb8)
+
 
 
 ![image](https://github.com/user-attachments/assets/6f66f9c7-9cfd-4ed2-acf3-464b54bfe0b5)
