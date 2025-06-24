@@ -67,4 +67,24 @@ i will show to u some of MY EDA :
 2- used XGBoost but its not consider datatime column in either training and testing Data, it depends on calender features such as hour,day,season,year and output PJM_MW (Electricity Demand) only but i also split data based on Datatime index due to preserve temporal order so setting each data comes after '2024-07-01' is considered as testing data else i consider it in training data , it was achieved of MAPE of 7 % as u can see it has been outperforming Prophet . so i have choose it for deployment 
 
 
+Deployment Model (using Docker and streamlit Web APP ) on Azure :
+
+## u can check it out :
+
+Live APP : electricitydemandapp-ezf8cef9btfsajbc.uaenorth-01.azurewebsites.net
+
+u can choose any future Date and it will forcast how much Electricity Demand for each hour 
+
+![Screenshot (1612)](https://github.com/user-attachments/assets/16abd2bd-1684-4de2-ab65-f56ff197bf9a) 
+
+u can visuialze Electricity Demand for each hour and finding insight about which hour will be the highest and lowest value 
+
+![Screenshot (1613)](https://github.com/user-attachments/assets/8ac0b7c2-1dd9-4c50-b66e-f86c99db5876)
+
+
+u can download Exel sheet contain hour with forcasted value 
+
+![Screenshot (1615)](https://github.com/user-attachments/assets/70bd672e-49c5-426b-9478-1ca9053fc25e)
+
+
 
