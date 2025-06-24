@@ -82,7 +82,7 @@ u can visuialze Electricity Demand for each hour and finding insight about which
 ![Screenshot (1613)](https://github.com/user-attachments/assets/8ac0b7c2-1dd9-4c50-b66e-f86c99db5876)
 
 
-u can download Exel sheet contain hour with forcasted value 
+u can download Data that contains hour with forcasted value 
 
 ![Screenshot (1615)](https://github.com/user-attachments/assets/70bd672e-49c5-426b-9478-1ca9053fc25e)
 
