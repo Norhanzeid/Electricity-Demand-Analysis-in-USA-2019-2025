@@ -71,7 +71,7 @@ Deployment Model (using Docker and streamlit Web APP ) on Azure :
 
 ## u can check it out :
 
-Live APP : electricitydemandapp-ezf8cef9btfsajbc.uaenorth-01.azurewebsites.net
+Live APP : https://electricitydemandapp-ezf8cef9btfsajbc.uaenorth-01.azurewebsites.net/
 
 u can choose any future Date and it will forcast how much Electricity Demand for each hour 
 
