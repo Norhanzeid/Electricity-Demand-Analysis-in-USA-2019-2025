@@ -4,13 +4,14 @@ FROM python:3.10-slim
 # Set working directory inside container
 WORKDIR /app
 
-# Copy requirements and install dependencies
+# Copy requirements 
 COPY requirements.txt .
+
+# install dependencies
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy all files in the project
 COPY . .
-
 
 # Expose Streamlit port
 EXPOSE 8501
