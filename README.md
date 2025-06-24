@@ -20,7 +20,9 @@ this is a sample of dataset after setting Datatime column as index :
 
 1- Removing outliers specific in oct 2021 using IQR.
 
-2- Convert Data column into Datatime so i can Create Calender Features such as Hour,month,day,weekday,season to perform EDA.
+2- Converted the date column into a datetime format to enable the creation of calendar-based features such as hour, month, day, weekday, and season for exploratory data analysis (EDA).
+
+3- Removing  Missing Values .
 
 4- Using Plotly and Seaborn , Matplotlib for Data visualization. 
 
@@ -53,7 +55,7 @@ this is a sample of dataset after setting Datatime column as index :
 
 ## Models :
 
-1- used Prophet Developed by Facebook cause it can easily detect seasonality , handling trends and dont need data in a stationary format so it can easliy doing forcastion . it accept data in format ds which refer to Datetime and y refer to PJM_MW (Electricity Demand) , split data into train and test manually by setting each data comes after '2024-07-01' is considered as testing data else i consider it in training data , it was achieved of MAPE of 9 % ,i try to add holidays to be considered in Model but it achevie nothing i mean its not enhance model performance it achieved 9.1% of MAPE
+1- I used Prophet, developed by Facebook, due to its ability to automatically detect seasonality, handle non-linear trends, and work without requiring the data to be stationary. Prophet accepts data in a specific format, where ds refers to datetime and y represents the target variable — in this case, PJM_MW (Electricity Demand). I manually split the dataset by assigning all records after '2024-07-01' as the test set, and the rest as training data. The model achieved a MAPE of 9% . I also experimented with adding holiday effects to the model, but they did not improve performance — the MAPE remained nearly the same at 9.1%.
 
 ![image](https://github.com/user-attachments/assets/13ee44ce-0275-4ecd-8602-a016d9ecf259)
 
