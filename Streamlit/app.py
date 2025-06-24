@@ -41,7 +41,7 @@ if st.button("Generate Forecast"):
         y_pred = model.predict(df_features)
         df["Forecast"] = y_pred
 
-        st.subheader(f"📊 Forecasted Demand on {selected_date}")
+        st.subheader(f"Forecasted Demand on {selected_date}")
         st.dataframe(df.reset_index().rename(columns={"index": "Datetime"}))
 
         # Plot bar chart
@@ -50,7 +50,7 @@ if st.button("Generate Forecast"):
 
         # CSV download
         csv = df.reset_index().rename(columns={"index": "Datetime"}).to_csv(index=False).encode("utf-8")
-        st.download_button("📥 Download Forecast as CSV", data=csv, file_name=f"forecast_{selected_date}.csv", mime="text/csv")
+        st.download_button("Download Forecast as CSV", data=csv, file_name=f"forecast_{selected_date}.csv", mime="text/csv")
 
 
 
